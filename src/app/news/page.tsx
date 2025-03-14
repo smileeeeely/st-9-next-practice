@@ -6,7 +6,7 @@ interface News {
   category: string;
   createdAt: number;
 }
-const page = async () => {
+const Newspage = async () => {
   const res = await fetch("http://localhost:4000/news", {
     next: { revalidate: 50 },
   });
@@ -53,4 +53,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Newspage;

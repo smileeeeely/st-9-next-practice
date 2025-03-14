@@ -1,8 +1,13 @@
+import TodoList from "../components/list/page";
+import TodoForm from "../components/todoForm/page";
 
-const todolistPage = () => {
+const TodolistPage = () => {
   return (
-    <div>todolistPage(CSR)</div>
-  )
-}
+    <div>
+      <TodoForm />
+      <TodoList />
+    </div>
+  );
+};
 
-export default todolistPage
+export default TodolistPage;
