@@ -1,11 +1,13 @@
-interface IntroData {
-
+interface Intro {
+  description1: string;
+  description2: string;
+  description3: string;
 }
 const HomePage = async () => {
   const res = await fetch("http://localhost:4000/intro", {
     cache: "force-cache",
   });
-  const introData = await res.json();
+  const introData: Intro = await res.json();
   return (
     <div className="home-container">
       <div className="intro-section">
